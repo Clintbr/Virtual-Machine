@@ -1,0 +1,14 @@
+//
+// Test: einfache If-Else-Verzweigung
+//
+
+void main() {
+  local Integer x;
+  x = readInteger();
+  if (x > 0) {
+    writeCharacter('+');
+  } else {
+    writeCharacter('-');
+  }
+  writeCharacter('\n');
+}

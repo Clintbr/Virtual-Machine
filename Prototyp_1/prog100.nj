@@ -1,0 +1,18 @@
+//
+// compute the gcd of two positive numbers
+//
+
+void main() {
+  local Integer x;
+  local Integer y;
+  local Integer z;
+  x = 100;
+  y = 1;
+  z = 1;
+  while (y <= x) {
+    y = y + 1;
+    z = z * y; 
+  }
+  writeInteger(z);
+  writeCharacter('\n');
+}

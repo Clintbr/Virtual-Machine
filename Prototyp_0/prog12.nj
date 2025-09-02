@@ -1,0 +1,18 @@
+//
+// Test: return statement ruft eine Funktion auf, die selbst eine Funktion aufruft
+//
+
+void main() {
+  local Integer result;
+  result = outer();
+  writeInteger(result);
+  writeCharacter('\n');
+}
+
+Integer inner() {
+  return 2;
+}
+
+Integer outer() {
+  return inner() + 3;
+}

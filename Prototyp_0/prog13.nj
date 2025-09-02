@@ -1,0 +1,20 @@
+//
+// Test: verschachtelte Funktionsaufrufe
+//
+
+void main() {
+  writeInteger(a(b(c())));
+  writeCharacter('\n');
+}
+
+Integer a(Integer x) {
+  return x + 1;
+}
+
+Integer b(Integer x) {
+  return x * 2;
+}
+
+Integer c() {
+  return 3;
+}
